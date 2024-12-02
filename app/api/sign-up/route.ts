@@ -56,7 +56,6 @@ export const POST = async (request: Request) => {
         verifyCode,
         verifyCodeExpiry: expiryDate,
         message: [],
-        createdAt: Date,
       });
 
       await newUser.save();
